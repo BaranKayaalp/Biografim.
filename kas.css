@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,100;1,300;1,400&family=Caveat&family=Dosis:wght@300;500&family=Electrolize&family=Oswald:wght@200;400&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Electrolize', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
+    scroll-behavior: smooth;
+}
+
+
+li {
+   list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(23, 25, 43);
+}
+::-webkit-scrollbar-track {
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+/* Navbar Başlangıç */
+
+.transparan {
+    background-color: rgba(23, 25, 43, 0.5);
+    height: 80px;
+    position: absolute;
+    color: white;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    position:fixed;
+    transition: .5s all;
+}
+
+.navbar {
+    height: 80px;
+    background: rgb(23, 25, 43);
+    position: absolute;
+    color: white;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    position:fixed;
+    transition: .5s all;
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 50px;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-items:  center;
+}
+
+.close i {
+    display: none;
+}
+
+.navbar-menu i {
+    cursor: pointer;
+}
+
+.navbar-menu-list {
+    display: flex;
+    list-style: none;
+    column-gap: 30px;
+    text-decoration: none;
+    position: relative;
+    padding-right: 1rem;
+}
+
+.navbar-menu-list i {
+    cursor: pointer;
+    right: 0;
+}
+
+.navbar-img {
+    height: 80px;
+    padding: 10px;
+}
+
+.navbar-menu-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.navbar-menu-list a:hover {
+    border-bottom: 1px solid #fff;
+    
+}
+
+.navbar-menu-item a  {
+    display: block;
+}
+
+
+
+
+.drop-down-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .drop-down-menu li {
+    display: block;
+  }
+  
+  .drop-down-menu li a {
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .navbar-menu-item:hover .drop-down-menu {
+    display: block;
+  }
+
+
+  @media only screen and (max-width: 800px) {
+
+   
+    .navbar-menu-item {
+        display: none;
+    }
+
+    .close i {
+        display: inline-block;
+        right: 0;
+        height: 20px;
+        width: 20px;
+    }
+
+    .navbar-logo img {
+       text-align: center;
+        
+    }
+
+    
+}
+
+  
+/* Navbar Bitiş */
+
+
+/* Section Başlangıç */
+.section {
+    height: 100vh;
+    background: #fff;
+    width: 100%;
+}
+
+.section-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+.section-about {
+    color: white;
+    height: 25%;
+
+}
+
+.section-about h3 {
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.section-about h5 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.section-about span {
+    color: rgb(0, 11, 109);
+}
+
+.section-about p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+.section-img {
+    clip-path: circle(50% at 50% 50%);
+    background: rgb(23, 25, 43);
+
+}
+
+.animation {
+    animation-name: infiniteupdown;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes infiniteupdown {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: white;
+    background-color: rgb(0, 11, 109);
+    display: inline-block;
+    text-decoration: none;
+    transition: .2s all;
+}
+
+.btn:hover {
+    background-color: white;
+    color: rgb(0, 11, 109);
+    transform: scaleY(1.1);
+}
+
+
+
+
+  
+  
+/* Section Bitiş */
+
+/*  About Başlangıç */
+
+.about {
+    height: 100vh;
+    background: rgb(23, 25, 43);
+    position: relative;
+    color: white;
+    align-items: center;
+
+}
+
+.about-wrapper {
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.about-wrapper .about-text {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.about-wrapper .about-text h1 {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.about-wrapper .about-text p {
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding-top: 30px;
+}
+
+.about-img {
+    align-items: center;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.about-img img{
+    height: 250px;
+    width: 250px;
+}
+
+
+  
+
+/* About Bitiş */
+
+/* Work Başlangıç */
+.work {
+    height: 100vh;
+    background: linear-gradient(#e66465, #9198e5);
+    position: relative;
+}
+
+.work h1{
+    text-align: center;
+    padding-top: 5rem;
+    color: white;
+    font-weight: 800;
+    font-size: 2rem;
+}
+.work span {
+    color: rgb(23, 25, 43);
+}
+
+.work-wrapper {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    gap: 2rem;
+    text-align: center;
+    
+}
+
+.work-wrapper i {
+    font-size: 4rem;
+    color: rgb(23, 25, 43);
+    margin: 1.1rem;
+    
+    
+}
+
+.work-wrapper h3{
+    color: rgb(23, 25, 43);
+    font-size: 1.5rem;
+    margin: 1.1rem;
+}
+
+.work-wrapper p {
+    color: rgb(23, 25, 43);
+    margin: 1.2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 25px;
+    margin-bottom: 2rem;
+    
+
+}
+
+.work-wrapper .work-box {
+    height: 50vh;
+    border: .2rem solid rgba(0, 0, 139, 0.345);
+    border-radius: 5px;
+    box-shadow: 0 0 1rem rgba(0, 0, 139, 0.345);
+    transition: .2s all;
+    width: 100%;
+    
+}
+
+.work-wrapper .work-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 3rem rgba(0, 0, 139, 0.345);
+}
+
+.work-wrapper .work-box .btn1 {
+    color: white;
+    padding: 20px 20px;
+    background-color: rgb(23, 25, 43);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .2s all;
+    margin: 1.1rem;
+    
+}
+
+.work-wrapper .work-box .btn1:hover {
+    box-shadow: 0 0 1rem rgba(0, 0, 139, 0.345);
+    color: rgb(23, 25, 43);
+    background-color: #9198e5;
+}
+
+
+/* Work Bitiş */
+
+/* Footer başlangıç */
+
+.footer {
+    height: 100vh;
+    background: rgb(23, 25, 43);
+}
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+justify-content: space-around;
+}
+
+.footer-wrapper .footer-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-wrapper .footer-link h3 {
+    padding: 25px;
+    color: white;
+    font-size: 2.5rem;
+    padding-top: 5rem;
+}
+
+.footer-wrapper .footer-link input {
+    padding: 10px;
+    margin: 5px;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.footer-wrapper .footer-link textarea {
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.2rem;
+}
+
+.btn4 {
+    width: 240px;
+    padding: 10px;
+    margin: 4px;
+    background: white;
+    cursor: pointer;
+    color: rgb(23, 25, 43);
+    outline: none;
+    border: none;
+}
+
+.btn4:hover {
+    transform: scale(1.02);
+    background: rgb(23, 25, 43);
+    color: white;
+}
+
+.footer-map .map {
+    padding-top: 95px;
+    height: 700px;
+    width: 400px;
+}
+

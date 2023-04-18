@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="/Jquerry/jquery-3.6.4.min.js"></script>
+    <title>Ödev</title>
+</head>
+<body>
+<header class="navbar">
+    <div class="navbar-wrapper">
+        <div class="navbar-logo">
+            <img src="Resimler/anka-removebg-preview.png" alt="" class="navbar-img" >
+        </div>
+        <div class="navbar-menu">
+            <ul class="navbar-menu-list">
+                <li class="navbar-menu-item"><a href="#homepage">Ana Sayfa</a></li>
+                <li class="navbar-menu-item"><a href="#about">Hakkımda</a></li>
+
+
+                <li class="navbar-menu-item"><a href="#work">Çalışmalarım <i class="fas fa-caret-down"></i></a>
+                    <ul class="drop-down-menu">
+                        <li ><a href="#work">HTML</a></li>
+                        <li ><a href="#work">CSS</a></li>
+                        <li ><a href="#work">JavaScript</a></li>
+                    </ul>
+                </li>
+
+                <li class="navbar-menu-item"><a href="#footer">İletişim</a></li>
+                
+            </ul>
+            <div class="close">
+                <i class='bx bx-menu'></i>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="section" id="homepage">
+    <div class="section-wrapper">
+        <div class="section-about">
+            <h3> Merhabalar! Ben Baran Kayaalp</h3>
+            <h5>Ben bir <span>Front-End</span> Developerim</h5>
+            <p>İstanbul Kültür Üniversitesi Bilgisayar Mühendisliği öğrencisiyim</p>
+            <a href="" class="btn">Daha Fazlası İçin</a>
+        </div>
+        <div class="section-img animation">
+            <img src="Resimler/7bbdfe6b-d3b4-438d-9cd3-99ff2ae734da-removebg-preview.png" alt="">
+        </div>
+    </div>
+</section>
+
+
+<section class="about" id="about">
+    <div class="about-wrapper">
+        <div class="about-text">
+            
+            <h1>Hakkımda</h1>
+            <p>Ben Baran Kayaalp. İstanbul Kültür Üniversitesinde Bilgisayar Mühendisliği okuyorum. 6 Aydır kendimi Front End alanında geliştiriyorum <br>
+            Amacım yazılımcı olarak iyi yerlere gelmenin yanı sıra iyi bir girişimci olmak. Bundan dolayı kendimi geliştiriyorum. Geleceğin mesleği olan yazılımda iş anlamında hiçbir zaman bocalayacağımı düşünmüyorum. <br>
+        Böyle bir sektörde iş arayan için her zaman iş olacaktır. Ben buna inanıyorum</p>
+        </div>
+        <div class="about-img">
+        <img src="Resimler/anka-removebg-preview.png" alt="" >
+    </div>
+    </div>
+</section>
+
+<section class="work" id="work">
+    <h1><span>Front-End</span> Çalışmalarım</h1>
+    <div class="work-wrapper">
+        <div class="work-box">
+            <i class='bx bxl-html5'></i>
+            <h3>HTML Çalışmalarım</h3>
+            <p>HTMK kullanarak websitelerin temelini meydana getiriyorum. Sağlam bina sağlam temele inşaat edilir.</p>
+            <a href="" class="btn1">Daha Fazlası İçin</a>
+        </div>
+        <div class="work-box">
+            <i class='bx bxl-css3'></i>
+            <h3>CSS3 Çalışmalarım</h3>
+            <p>CSS3 Kullanarak binaya estetiklik ve göze hoş gelecek ayrıntılar ekliyorum. Sağlam binanın yanı sıra güzel bina!</p>
+            <a href="" class="btn1">Daha Fazlası İçin</a>
+        </div>
+        <div class="work-box">
+            <i class='bx bxl-javascript' ></i>
+            <h3>JavaScript Çalışmalarım</h3>
+            <p>JavaScript ile binayı dinamikleştiriyoruz, küçük mekaniksel işlevsel ile binayı tam olarak işlevsel hale getiriyorum.</p>
+            <a href="" class="btn1">Daha Fazlası İçin</a>
+        </div>
+    </div>
+</section>
+<footer class="footer" id="footer">
+    <div class="footer-wrapper">
+        <div class="footer-link">
+            <h3>İletişim Formu</h3>
+            <input type="text" value="İsminiz">
+            <input type="text" value="Soyisminiz">
+            <input type="email" value="Mailiniz">
+            <input type="text" value="Telefon Numaranız">
+            <textarea name="" id="" cols="30" rows="10">Mesajınız</textarea>
+            <button class="btn4">Gönder</button>
+        </div>
+        <div class="footer-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227.08561007046666!2d28.840334701721225!3d40.99277631414588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa35e55764c6b%3A0x859902309b1196e5!2zxLBrw7wuIEVya2VrIMOWxJ9yZW5jaSBZdXJkdQ!5e0!3m2!1str!2str!4v1681101993337!5m2!1str!2str" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
